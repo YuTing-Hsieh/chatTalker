@@ -1,0 +1,18 @@
+@mixin rwd($width){
+    @media screen and (min-width:$width){
+        @content;
+    }
+}
+@mixin buttonLink($color,$padding,$hover--bg){
+    a {
+        text-decoration: none;
+        color: $color;
+        padding: $padding;
+        display: block;        
+        &:hover {
+          background: $hover--bg;
+          border-radius: inherit;
+        }
+      }
+}
+

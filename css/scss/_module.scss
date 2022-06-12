@@ -1,0 +1,17 @@
+.btn-primary{
+    background: $c-primary;
+    font-size: $fz-lg;
+    line-height: 1.44;
+    border-radius: 27px;
+    border: 0px;
+    @include buttonLink(#fff,12px 32px,lighten($c-primary,20%));
+    
+}
+.btn-secondary{
+    background: $c-secondary;   
+    font-size: $fz-base;
+    line-height: 1.5;
+    border-radius: 22px;
+    border: 0px;
+    @include buttonLink(#fff,8px 32px,lighten($c-secondary,20%));
+}

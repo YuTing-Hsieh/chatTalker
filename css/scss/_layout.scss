@@ -1,0 +1,47 @@
+body{
+    font-family: $font-family;
+}
+h2{
+    font-size: $fz-h2;
+    color: $c-base;
+    line-height: 1.4;
+    font-weight: bold;    
+}
+
+h3{
+    font-size: $fz-h3;
+    color: $c-base;
+    line-height: 1.4;
+    font-weight: bold;
+    @include rwd($md){
+        font-size: $fz-h3*1.143;
+    }
+}
+
+h4{
+    font-size: $fz-h4;
+    color: $c-base;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+header{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+    &--direction__col{
+        flex-direction: column;
+    }
+    &--justify__between{
+        justify-content: space-between;
+    }
+    &--justify__end{
+        justify-content: end;
+    }
+    &--alignItems__center{
+        align-items: center;
+    }
+   
+}

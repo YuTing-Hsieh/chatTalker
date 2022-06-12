@@ -1,0 +1,51 @@
+.container{
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 16px 20px;
+    border-bottom: 2px solid #FFD153;
+
+    @include rwd($md){
+        border-bottom: 0px;
+    }
+}
+.logo{
+    width: 130px;
+}
+
+.footer{
+    height: calc(461px + 56px);
+    
+    @include rwd($md){
+        height: calc(503px + 56px);
+    }
+
+    &--box{
+        background-image: url(../img/footer_sm.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 261px;
+        width: 100vw;
+        @include rwd($sm){
+            background-image: url(../img/home_footer.svg);
+            height: 384px;
+        }
+    }
+    &--title{
+        font-size: $fz-base*1.5;
+        margin-top: 293px;
+        margin-bottom: 24px;
+        @include rwd($md){
+            font-size: $fz-base*2;
+        }
+    }
+    p{
+        padding: 16px 44px;
+        line-height: 1.5;
+    }
+
+
+}
