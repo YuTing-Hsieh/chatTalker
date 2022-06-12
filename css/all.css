@@ -245,4 +245,19 @@ header {
   padding: 16px 44px;
   line-height: 1.5;
 }
+
+.role {
+  padding: 0 20px;
+}
+
+.role .roleCard {
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+.role .roleCard__img {
+  width: 260px;
+  border-radius: 12px 12px 0px 0px;
+}
 /*# sourceMappingURL=all.css.map */
