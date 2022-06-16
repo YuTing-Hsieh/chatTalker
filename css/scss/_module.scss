@@ -15,3 +15,27 @@
     border: 0px;
     @include buttonLink(#fff,8px 32px,lighten($c-secondary,20%));
 }
+.btn__top{
+    position: fixed;
+    background: $c-primary;
+    color: #fff;
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    @include rwd($md){
+        width: 71px;
+        height: 71px;
+        border-radius: 71px;
+        line-height: 71px;
+        right: 48px;
+        bottom: 23px;
+    }
+
+}
