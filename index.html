@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,83 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/all.css">
 </head>
-<body>    
+
+<body>
     <header>
-        <navbar class="container header flex flex--justify__between flex--alignItems__center">
+        <navbar class="container header flex flex__justify--between flex__alignItems--center">
             <h1><a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a></h1>
             <div class="btn-secondary"><a href="#">方案費用</a></div>
         </navbar>
-    </header>  
-    <main>
-        <section class="role">
-            <h3>任何的角色，我都能給</h3>
-            <p>量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策</p>
-            <ul class="flex flex--direction__col ">
-                <li class="roleCard">
-                    <img src="img/ch01.svg" alt="rolePiceure01" class="roleCard__img">
-                    <p class="roleCard__title">活動主</p>
-                    <p class="roleCard__content">用戶數位足跡掌握在手 精準取得客戶輪廓，提供分析</p>
+    </header>
+    <main class="container">
+        <section class="platform flex flex__direction--col">
+            <h3>三大平台，我來搞定</h3>
+            <ul class="platform__list flex flex__wrap flex__justify--evenly">
+                <li class="platformCard flex flex__direction--col flex__alignItems--center">
+                    <img src="img/messenger.svg" alt="messengerIcon" class="platformCard__img">
+                    <div class="platformCard__body">
+                        <h4 class="platformCard__title">Facebook Messenger</h4>
+                        <p class="platformCard__content">結合粉絲專頁，提高粉絲互動率 有效經營品牌社群</p>
+                    </div>
                 </li>
-                <li class="roleCard">
-                    <img src="img/ch02.svg" alt="rolePiceure02" class="roleCard__img">
-                    <p class="roleCard__title">創作者</p>
-                    <p class="roleCard__content">自由設計互動腳本 輕鬆整合各項數據</p>
+                <li class="platformCard flex flex__direction--col flex__alignItems--center">
+                    <img src="img/line.svg" alt="lineIcon" class="platformCard__img">
+                    <div class="platformCard__body">
+                        <h4 class="platformCard__title">LINE 官方帳號</h4>
+                        <p class="platformCard__content">融入日常生活，精準傳遞品牌資訊 打造個人化專屬服務</p>
+                    </div>
                 </li>
-                <li class="roleCard">
-                    <img src="img/ch03.svg" alt="rolePiceure03" class="roleCard__img">
-                    <p class="roleCard__title">企業品牌</p>
-                    <p class="roleCard__content">多元資料整合，做出服務差異化 幫助企業加速決策</p>
-                </li>
-                <li class="roleCard">
-                    <img src="img/ch04.svg" alt="rolePiceure04" class="roleCard__img">
-                    <p class="roleCard__title">其他</p>
-                    <p class="roleCard__content">創造更多可能...</p>
+                <li class="platformCard flex flex__direction--col flex__alignItems--center">
+                    <img src="img/instagram.svg" alt="IgIcon" class="platformCard__img">
+                    <div class="platformCard__body">
+                        <h4 class="platformCard__title">Instagram 商業帳號</h4>
+                        <p class="platformCard__content">貼近粉絲，提升品牌自然聲量 行銷、抽獎一站完成</p>
+                    </div>
                 </li>
             </ul>
-        </section>   
-    </main> 
-    <footer class="footer flex flex--direction__col flex--alignItems__center flex--justify__between">
-        <div class="footer--box flex flex--direction__col flex--alignItems__center">
-            <h3 class="footer--title">\ 美好用戶體驗，從對話開始 /</h3>
+        </section>
+        <section class="role flex flex__direction--col">
+            <h3>任何的角色，我都能給</h3>
+            <p class="role__content">量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策</p>
+            <ul class="role__list flex flex__wrap flex__justify--center">
+                <li class="roleCard flex flex__direction--col flex__alignItems--center">
+                    <img src="img/ch01.svg" alt="rolePic01" class="roleCard__img">
+                    <div class="roleCard__body">
+                        <p class="roleCard__title">活動主</p>
+                        <p class="roleCard__content">用戶數位足跡掌握在手 精準取得客戶輪廓，提供分析</p>
+                    </div>
+                </li>
+                <li class="roleCard flex flex__direction--col flex__alignItems--center">
+                    <img src="img/ch02.svg" alt="rolePic02" class="roleCard__img">
+                    <div class="roleCard__body">
+                        <p class="roleCard__title">創作者</p>
+                        <p class="roleCard__content">自由設計互動腳本 輕鬆整合各項數據</p>
+                    </div>
+                </li>
+                <li class="roleCard flex flex__direction--col flex__alignItems--center">
+                    <img src="img/ch03.svg" alt="rolePic03" class="roleCard__img">
+                    <div class="roleCard__body">
+                        <p class="roleCard__title">企業品牌</p>
+                        <p class="roleCard__content">多元資料整合，做出服務差異化 幫助企業加速決策</p>
+                    </div>
+                </li>
+                <li class="roleCard flex flex__direction--col flex__alignItems--center">
+                    <img src="img/ch04.svg" alt="rolePic04" class="roleCard__img">
+                    <div class="roleCard__body">
+                        <p class="roleCard__title">其他</p>
+                        <p class="roleCard__content">創造更多可能...</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer flex flex__direction--col flex__alignItems--center flex__justify--between">
+        <div class="footer__box flex flex__direction--col flex__alignItems--center">
+            <h3 class="footer__title">\ 美好用戶體驗，從對話開始 /</h3>
             <div class="btn-primary"><a href="#">方案費用</a></div>
         </div>
         <p>© 2022 chatTalker. All Rights Reserved.</p>
     </footer>
 </body>
+
 </html>

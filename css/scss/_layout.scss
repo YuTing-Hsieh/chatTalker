@@ -13,6 +13,8 @@ h3{
     color: $c-base;
     line-height: 1.4;
     font-weight: bold;
+    padding: 0 0 16px 0;
+    text-align: center;
     @include rwd($md){
         font-size: $fz-h3*1.143;
     }
@@ -21,7 +23,7 @@ h3{
 h4{
     font-size: $fz-h4;
     color: $c-base;
-    line-height: 1.4;
+    line-height: 1.44;
     font-weight: bold;
 }
 
@@ -31,16 +33,28 @@ header{
 
 .flex{
     display: flex;
-    &--direction__col{
+    &__direction--col{
         flex-direction: column;
     }
-    &--justify__between{
+    &__wrap{
+        flex-wrap: wrap;
+    }
+    &__justify--between{
         justify-content: space-between;
     }
-    &--justify__end{
+    &__justify--end{
         justify-content: end;
     }
-    &--alignItems__center{
+    &__justify--center{
+        justify-content: center;
+    }
+    &__justify--around{
+        justify-content: space-around;
+    }
+    &__justify--evenly{
+        justify-content: space-evenly;
+    }
+    &__alignItems--center{
         align-items: center;
     }
    
