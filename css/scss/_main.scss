@@ -1,3 +1,6 @@
+// *{
+//     outline: 1px #000 solid;
+// }
 .container {
     max-width: 1088px;
     margin: 0 auto;
@@ -275,6 +278,88 @@
             color: $c-fourth;
             line-height: 1.5;
             text-align: center;
+        }
+    }
+}
+
+.review{
+    padding: 0 20px 36px 20px;
+    @include rwd($md){
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    &__list{
+        padding-top: 16px;
+        @include rwd($md){
+            padding-top: 32px;
+        }
+        @include rwd($xl){           
+            margin-right: -32px;
+            margin-left: -32px;
+        }
+    }
+    .reviewCard{
+        padding-bottom: 24px;
+        @include rwd($md){
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        
+        &__img{
+            width: 80px;
+            border-radius: 80px;
+            box-shadow: 0px 2px 10px #00000014;
+            margin-bottom: -24px;
+            margin-left: 16px;
+        }
+        &__body{
+            width: 335px;
+            border-radius: 12px;
+            box-shadow: 0px 2px 10px #00000014;
+            padding: 0 16px;
+            @include rwd($md){
+                width: 230px;
+                padding: 0px;
+            }
+            @include rwd($lg){
+                width: 300px;
+                padding: 0 16px;
+            }
+            @include rwd($xl){
+                width: 352px;
+                padding: 0 32px;
+            }
+            
+        }        
+        &__content{
+            font-size: $fz-base;
+            line-height: 1.5;
+            color: $c-base;
+            padding-top: 48px;
+            padding-bottom: 32px;
+            @include rwd($md){
+                padding-bottom: 48px;
+            }
+        }
+        &__title{
+            font-size: $fz-base;
+            line-height: 1.5;
+            color: $c-base;
+            font-weight: bold;
+            padding-bottom: 8px;
+        }
+        &__detailTitle{
+            font-size: $fz-base;
+            line-height: 1.5;
+            color: $c-base;
+        }
+        &__detailContent{
+            width: 121px;
+        }
+        & .starIcon{
+            width: 16px;
+            height: 16px;
         }
     }
 }
