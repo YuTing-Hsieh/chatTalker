@@ -121,6 +121,13 @@ h4 {
 header {
   height: 100vh;
   position: relative;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    margin-bottom: 100px;
+  }
 }
 
 .flex {
@@ -249,6 +256,10 @@ header {
   }
 }
 
+* {
+  outline: 1px #000 solid;
+}
+
 .container {
   max-width: 1088px;
   margin: 0 auto;
@@ -262,6 +273,8 @@ header {
 
 @media screen and (min-width: 768px) {
   .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-bottom: 0px;
     margin-bottom: 30px;
   }
@@ -477,13 +490,24 @@ header {
   border-radius: 12px;
   -webkit-box-shadow: 0px 2px 10px #00000014;
           box-shadow: 0px 2px 10px #00000014;
-  padding: 12px 0;
-  padding: 12px 38px;
+  margin: 12px 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .role .roleCard {
+    margin: 12px 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .role .roleCard {
+    margin: 12px 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .role .roleCard {
-    padding: 12px 8px;
+    margin: 12px 8px;
   }
 }
 
@@ -494,6 +518,7 @@ header {
 
 .role .roleCard__body {
   width: 260px;
+  border-radius: 0px 0px 12px 12px;
 }
 
 .role .roleCard__title {
@@ -508,6 +533,7 @@ header {
   color: #221E1F;
   padding: 0 16px 24px 16px;
   text-align: center;
+  border-radius: 0px 0px 12px 12px;
 }
 
 .platform {
@@ -526,7 +552,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .platform__list {
-    padding-top: 32px;
+    padding-top: 20px;
   }
 }
 
@@ -541,6 +567,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .platform .platformCard__img {
+    width: 90px;
     padding-bottom: 24px;
   }
 }
@@ -580,8 +607,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .review {
-    padding-right: 8px;
-    padding-left: 8px;
+    padding: 0 8px 76px 8px;
   }
 }
 
@@ -686,5 +712,140 @@ header {
 .review .reviewCard .starIcon {
   width: 16px;
   height: 16px;
+}
+
+.feature {
+  padding: 28px 20px 48px 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature {
+    padding: 56px 8px 88px 8px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.feature .featureBox {
+  padding-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 390px;
+}
+
+@media screen and (min-width: 768px) {
+  .feature .featureBox {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature .featureBox__title {
+    text-align: left;
+  }
+}
+
+.feature .featureBox__content {
+  font-size: 1rem;
+  color: #221E1F;
+  line-height: 1.5;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature .featureBox__content {
+    font-size: 1.125rem;
+    line-height: 1.44;
+    padding-bottom: 24px;
+    text-align-last: left;
+  }
+}
+
+.feature__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__list {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .feature__list {
+    width: 600px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.feature .featureCard {
+  padding: 32px 24px 48px 24px;
+  width: 230px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  margin: 12px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .feature .featureCard {
+    width: 170px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .feature .featureCard {
+    width: 230px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 47px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature .featureCard {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.feature .featureCard__img {
+  padding: 17px;
+  margin-bottom: 24px;
+  width: 86px;
+  height: 86px;
+}
+
+.feature .featureCard__title {
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .feature .featureCard__title {
+    padding-bottom: 16px;
+  }
+}
+
+.feature .featureCard__content {
+  font-size: 1rem;
+  color: #221E1F;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=all.css.map */
