@@ -256,10 +256,6 @@ header {
   }
 }
 
-* {
-  outline: 1px #000 solid;
-}
-
 .container {
   max-width: 1088px;
   margin: 0 auto;
